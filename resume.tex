@@ -1,0 +1,168 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{
+letterpaper,
+top=0.5in,
+left=0.5in,
+right=0.5in,
+bottom=0.5in
+}
+
+% required packages
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{tabularx}
+
+% line spacing
+\usepackage{setspace}
+
+% fancy header stuff
+\usepackage{fancyhdr}
+\pagestyle{empty}
+\fancyhf{}
+\fancyfoot{}
+
+% margin adjustments
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% section formatting
+\titleformat{\section}{\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule{}]
+
+% custom commands
+\newcommand{\resumeHeading}[3]{
+\item\begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & {#3} \\
+\end{tabular*}
+\textit{#2}
+}
+
+\newcommand{\headingList}[2]{
+\setlength\itemsep{-1.em}
+\item\begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1}: {#2}
+\end{tabular*}
+}
+
+\newcommand{\resumeItem}[1]{\item[–]{#1}}
+\newcommand{\tabitem}{~~~~\llap{–}~~}
+\newcommand{\subheadingStart}{\begin{itemize}[leftmargin=*]\setlength\itemsep{0em}}
+\newcommand{\subheadingEnd}{\end{itemize}}
+\newcommand{\itemStart}{\begin{itemize}\setlength\itemsep{0em}}
+\newcommand{\itemEnd}{\end{itemize}}
+
+% ====================
+% DOCUMENT STARTS HERE
+% ====================
+\begin{document}
+% ====================
+% HEADING
+% ====================
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+% \setlength\itemsep{1em}
+\textbf{\large Rey Stone} \\
+\small{reyhstone@gmail.com} \\
+\small{\href{https://linkedin.com/in/reyhstone}{linkedin.com/in/reyhstone}} \\
+\small{Boulder, CO}
+\end{tabular*}
+
+% ====================
+% EDUCATION
+% ====================
+\section{Education}
+
+\subheadingStart
+
+% Graudate
+
+\resumeHeading{University of Colorado, Boulder}{M.Sc. Computer Science}{Aug 2026 — Present}
+
+% Undergraduate
+
+\resumeHeading{University of Colorado, Boulder}{B.A. Computer Science, Philosophy minor}{Aug 2023 — Dec 2025}
+
+\subheadingEnd
+
+% ====================
+% EXPERIENCE
+% ====================
+\section{Experience}
+
+\subheadingStart
+
+% CU Anschutz
+
+\resumeHeading{Software Engineer Intern}{CU Anschutz mHealth Impact Lab}{May 2026 — Present}
+\itemStart
+\resumeItem{Investigated data quality issues in medical survey datasets and reported findings to research team.}
+\resumeItem{Designed and led front-end development for a research study monitoring health statistics using Garmin data.}
+\resumeItem{Collaborated with researchers and developers to create a full-stack application to conduct questionnaires with meeting FHIR Healthcare protocols.}
+\resumeItem{Researched healthcare guidelines, rules, and regulations to ensure compliance with these standards, and to ensure anonymity of participants.}
+\itemEnd
+
+% Zonit Structured Solutions
+
+\resumeHeading{Quality Assurance Engineer}{Zonit Structured Solutions}{May 2024 — Dec 2024}
+\itemStart
+\resumeItem{Conducted quality assurance testing on power distribution and management systems, ensuring compliance with professional-grade standards.}
+\resumeItem{Collaborated with repair mechanics to identify and document unit defects and performance issues.}
+\resumeItem{Adapted testing protocols to accommodate evolving project requirements and timelines.}
+\itemEnd
+
+\subheadingEnd
+
+% END EXPERIENCE
+
+% ====================
+% PROJECTS
+% ====================
+\section{Projects}
+
+\subheadingStart
+
+% Machine Learning project
+
+\resumeHeading{Predicting Covid-19 Risk}{Python, scikit-learn}{Sep 2025 — Dec 2025}
+\itemStart
+\resumeItem{Developed predictive models to research individual feature effects on risk of death and ICU admittance for patients diagnosed with covid-19.}
+\resumeItem{Presented a project report thoroughly explaining findings and research methodologies used.}
+\itemEnd
+
+% OOP project
+
+\resumeHeading{Othello}{Java}{Nov 2025 — Dec 2025}
+
+\itemStart
+\resumeItem{Implemented a responsive user interface using Java Swing framework, displaying the game visually, and handling user interaction through event listeners and observers.}
+\resumeItem{Created a comprehensive JUnit test suite to validate game logic and method coverage, ensuring code reliability through unit tests covering basic functionality, edge cases, and game rules.}
+\itemEnd
+
+% Full-stack web application
+
+\resumeHeading{Pocket Mechanics, Auto Part Finder}{HTML/CSS, Javascript, Docker, PostgreSQL, Node.js}{Mar 2025 — May 2025}
+\itemStart
+\resumeItem{Implemented a PostgreSQL database with vehicles and parts scraped from RockAuto's API.}
+\resumeItem{Designed a secure user authentication system that allows users to log in, save parts, vehicles, and buy items.}
+\resumeItem{Integrated Google Maps API to provide real-time location-based search for nearby retailers.}
+\itemEnd
+
+\subheadingEnd
+
+% ====================
+% SKILLS
+% ====================
+\section{Skills}
+
+\subheadingStart
+\headingList{Languages}{Python, Javascript/Typescript, Java, C/C++, LaTeX, SQL}
+\headingList{Tools}{React, Django, Next.js, Pandas, Figma, Git, NumPy, scikit-learn, matplotlib, Docker, PostgreSQL}
+\subheadingEnd
+
+\end{document}
+% ====================
+% NOTHING AFTER THIS LINE
+% ====================
