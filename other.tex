@@ -1,0 +1,150 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{
+letterpaper,
+top=0.5in,
+left=0.5in,
+right=0.5in,
+bottom=0.5in
+}
+
+% required packages
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{tabularx}
+
+% line spacing
+\usepackage{setspace}
+
+% fancy header stuff
+\usepackage{fancyhdr}
+\pagestyle{empty}
+\fancyhf{}
+\fancyfoot{}
+
+% margin adjustments
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% section formatting
+\titleformat{\section}{\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule{}]
+
+% custom commands
+\newcommand{\resumeHeading}[3]{
+\item\begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & {#3} \\
+\end{tabular*}
+\textit{#2}
+}
+
+\newcommand{\headingList}[2]{
+\setlength\itemsep{-1.em}
+\item\begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1}: {#2}
+\end{tabular*}
+}
+
+\newcommand{\resumeItem}[1]{\item[–]{#1}}
+\newcommand{\tabitem}{~~~~\llap{–}~~}
+\newcommand{\subheadingStart}{\begin{itemize}[leftmargin=*]\setlength\itemsep{0em}}
+\newcommand{\subheadingEnd}{\end{itemize}}
+\newcommand{\itemStart}{\begin{itemize}\setlength\itemsep{0em}}
+\newcommand{\itemEnd}{\end{itemize}}
+
+% ====================
+% DOCUMENT STARTS HERE
+% ====================
+\begin{document}
+
+% ====================
+% HEADING
+% ====================
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+% \setlength\itemsep{1em}
+\textbf{\large Rey Stone} \\
+\small{+1 484-356-6871} \\
+\small{reyhstone@gmail.com} \\
+\small{Boulder, CO}
+\end{tabular*}
+
+% ====================
+% SKILLS
+% ====================
+\section{Skills}
+
+\subheadingStart
+\headingList{Technical skills}{Espresso machine operation, POS systems, cash handling, food safety knowledge}
+\headingList{Soft skills}{Customer service, teamwork, multitasking, time management, communication, attention to detail}
+\subheadingEnd
+
+% ====================
+% EXPERIENCE
+% ====================
+\section{Experience}
+
+\subheadingStart
+
+% Zonit Structured Solutions
+
+\resumeHeading{Zonit Structured Solutions}{Quality Assurance Engineer}{May 2024 — Dec 2024}
+\itemStart
+\resumeItem{Conducted quality assurance testing on power distribution and management systems, ensuring compliance with professional-grade standards.}
+\resumeItem{Tested power management solutions focused on power distribution, power redundancy, and power path security across multiple product lines.}
+\resumeItem{Collaborated with repair mechanics to identify and document unit defects and performance issues.}
+\resumeItem{Adapted testing protocols to accommodate evolving project requirements and timelines.}
+\itemEnd
+
+% Evergreen Cafe
+
+\resumeHeading{Evergreen Cafe}{Barista}{Sep 2022 — Aug 2023}
+\itemStart
+\resumeItem{Prepared espresso-based beverages, drip coffee, and specialty drinks while maintaining quality standards and meeting customer preferences during high-volume service periods.}
+\resumeItem{Operated POS system to process orders and payments accurately, handling cash and card transactions efficiently.}
+\resumeItem{Performed food preparation tasks and light menu items following food safety protocols.}
+\resumeItem{Maintained cleanliness of cafe workspace, equipment, and customer areas throughout shifts to ensure health code compliance and positive customer experiences.}
+\resumeItem{Collaborated with team members to manage workflow during peak hours.}
+\itemEnd
+
+
+% McDonald's part 2
+
+\resumeHeading{McDonald's}{Crew Member}{May 2021 — Aug 2021}
+\itemStart
+\resumeItem{Operated fryer station to prepare french fries and other fried menu items while maintaining food quality and temperature standards.}
+\resumeItem{Processed customer orders as a cashier for both front counter and drive-thru, ensuring accuracy adn prompt service.}
+\resumeItem{Delivered completed orders to customers in a timely manner, and addressed special requests with professionalism.}
+\resumeItem{Maintained cleanliness of work stations, dining area, and kitchen equipment to meet health and safety regulations.}
+\itemEnd
+
+% McDonald's part 1
+
+\resumeHeading{McDonald's}{Crew Member}{Jun 2017 — Aug 2017}
+\itemStart
+\resumeItem{Served customers at front counter, drive-thru positions, processing orders in a high-stress environment.}
+\resumeItem{Prepared menu items at various stations including fryer, ensuring consisten quality and adherence to recipies.}
+\resumeItem{Supported team in maintaining restaurant cleanliness and food safety standards throughout shifts.}
+\resumeItem{Collaborated with coworkers to deliver food orders to customers in a friendly and efficient manner.}
+\itemEnd
+
+\subheadingEnd
+% END EXPERIENCE
+
+
+% ====================
+% EDUCATION
+% ====================
+\section{Education}
+
+\subheadingStart
+\resumeHeading{University of Colorado, Boulder}{B.A. Computer Science, Philosophy minor}{Aug 2023 — Dec 2025}
+\resumeHeading{Delaware County Community College}{A.A.S. Computer Science}{Aug 2021 — May 2023}
+\subheadingEnd
+
+\end{document}
+% ====================
+% NOTHING AFTER THIS LINE
+% ====================
